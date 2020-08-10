@@ -1,0 +1,212 @@
+.FreelanceImageContainer {
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.74),
+      rgba(0, 0, 0, 0.67)
+    ),
+    url(../Assets/Images/g6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+}
+.SecondaryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.SecondaryContainer h6 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 3rem;
+  font-family: var(--ff-secondary);
+  font-style: italic;
+}
+.AboutmeInfo {
+  line-height: 1.8;
+  font-family: var(--ff-secondary);
+}
+.SecondaryContainer h3 {
+  color: #fff;
+  font-size: 2.5em;
+  margin: 0.5em 0 1em;
+  font-weight: 700;
+}
+.ButtonsSection {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .SecondaryContainer h3 {
+    font-size: 1.3em;
+  }
+  .ButtonsSection {
+    width: 100%;
+  }
+  .SecondaryContainer h6 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .SecondaryContainer h3 {
+    font-size: 1em;
+  }
+  .ButtonsSection {
+    padding: 1rem 0rem;
+  }
+  .SecondaryContainer h6 {
+    font-size: 16px;
+  }
+}
+
+/* // actual footer */
+.Footerprimary {
+  padding: 2rem 1rem;
+  background: var(--mainBg);
+  color: var(--mainWhite);
+}
+.Footer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Aboutme,
+.Address,
+.Contactme {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-between;
+  min-height: 15vh;
+  flex: 1;
+  padding: 0 1rem;
+  font-family: var(--ff-secondary);
+}
+.Aboutme > *,
+.Address > *,
+.Contactme > * {
+  padding: 1rem;
+}
+
+.AboutmeIcon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  font-size: 150%;
+  color: var(--darkBlue);
+}
+.AboutmeIcon a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.socialIcon {
+  cursor: pointer;
+}
+.socialIcon:hover {
+  transform: translateY(-10px);
+  transition: 0.5s ease;
+}
+.AddressIcon {
+  font-size: 110%;
+  color: var(--darkBlue);
+}
+.AddressLocation,
+.AddressPhone,
+.AddressEmail {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-gap: 30px;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+
+.FooterForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FooterForm > * {
+  padding: 0.7rem;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.heading {
+  align-self: center;
+  min-width: 100%;
+  text-align: center;
+  margin-right: 0px;
+  font-size: 18px;
+  color: var(--lightYellow);
+  position: relative;
+}
+.heading::after {
+  content: '';
+  width: 60px;
+  height: 2px;
+  top: -1rem;
+  display: block;
+  background-color: var(--lightYellow);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.Address h5 {
+  width: 100%;
+}
+
+.Address {
+  align-items: center;
+}
+@media (min-width: 1250px) {
+  .Footer {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 890px) {
+  .Footer {
+    flex-direction: column;
+  }
+  .Aboutme,
+  .Address,
+  .Contactme {
+    margin-bottom: 50px;
+  }
+  .AddressLocation,
+  .AddressPhone,
+  .AddressEmail {
+    grid-gap: 100px;
+  }
+  .heading {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .AddressLocation,
+  .AddressPhone,
+  .AddressEmail {
+    width: 100%;
+    grid-gap: 30px;
+  }
+  .Aboutme,
+  .Address {
+    margin-bottom: 20px;
+  }
+
+  .Contactme {
+    margin-bottom: 0px;
+  }
+}

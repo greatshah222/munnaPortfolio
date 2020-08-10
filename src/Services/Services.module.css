@@ -1,0 +1,86 @@
+.ServicesPrimary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 20px auto;
+}
+.Services h2,
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 50px 0;
+  font-family: var(--ff-primary);
+}
+.Services {
+  background-color: var(--mainHover);
+  padding-bottom: 50px;
+}
+.info {
+  line-height: 2;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.info li {
+  margin-bottom: 1rem;
+}
+.logo {
+  padding-bottom: 50px;
+}
+
+.Services h2:after,
+h2::after {
+  content: '';
+  width: 120px;
+  height: 4px;
+  top: -1rem;
+  display: block;
+  background-color: var(--darkBlue);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.ServicesSecondary {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+  min-height: 60vh;
+}
+.ServicesSecondary:hover {
+  background-color: var(--darkBlue);
+  color: var(--mainWhite);
+}
+
+.ServicesSecondary p {
+  padding: 3rem;
+  font-family: var(--ff-secondary);
+  font-style: italic;
+}
+.underline {
+  width: 50px;
+  height: 2px;
+  top: -1rem;
+  display: block;
+  background-color: var(--darkBlue);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.ServicesSecondary:hover .underline {
+  background-color: var(--mainWhite);
+}
+
+.socialIcon {
+  width: 100%;
+}

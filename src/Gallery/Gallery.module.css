@@ -1,0 +1,23 @@
+.gallerySection {
+  margin-top: 2rem;
+}
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  margin: 0 5%;
+
+  grid-gap: 10px;
+}
+.imgGallery {
+  width: 100%;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.imgGallery:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.5s, opacity 0.5s;
+  z-index: 1;
+}

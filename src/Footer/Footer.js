@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Button from '../Shared/Button/Button';
 import classes from './Footer.module.css';
-import axios from 'axios';
-import CV from '../Assets/Images/NewCvUpdated.pdf';
+// import CV from '../Assets/Images/NewCvUpdated.pdf';
 import {
   FaFacebook,
-  FaLinkedin,
-  FaGithubSquare,
-  FaTwitter,
   FaMailchimp,
   FaLocationArrow,
   FaMailBulk,
@@ -15,48 +11,16 @@ import {
 } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Footer() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  const [Email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [loading, setLoading] = useState(false);
-  const EmailChangehandler = (e) => {
-    setEmail(e.target.value);
-  };
-  const MessageChangehandler = (e) => {
-    setMessage(e.target.value);
-  };
-  const formSubmitHandler = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    try {
-      await axios({
-        method: 'POST',
-        data: {
-          email: Email,
-          message: message,
-        },
-        url: `${process.env.REACT_APP_BACKEND_URL}/email`,
-      });
-      setMessage('');
-      setEmail('');
-      await toast.success('Thankyou for the Message');
-      setLoading(false);
-    } catch (error) {
-      await toast.error(error.response.data.error.response);
-      console.log(error.response.data.error.response);
-      setLoading(false);
-    }
-  };
+
   return (
     <>
       <section className={classes.FreelanceImageContainer}>
-        <ToastContainer />
         <div className={classes.SecondaryContainer}>
           <h3>Let's work together indeed!</h3>
           <div data-aos='fade-right' className={classes.ButtonsSection}>

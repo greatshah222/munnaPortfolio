@@ -2,7 +2,7 @@ import React from 'react';
 import profile from '../../Assets/Images/IMG_3970.JPG';
 import classes from './FrontPage.module.css';
 
-import { FaFacebookSquare, FaTwitter } from 'react-icons/fa';
+import { FaFacebookSquare } from 'react-icons/fa';
 import Button from '../../Shared/Button/Button';
 import { Animated } from 'react-animated-css';
 

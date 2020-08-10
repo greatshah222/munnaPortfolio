@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import classes from './Experience.module.css';
-import { FaServicestack, FaCertificate, FaLink } from 'react-icons/fa';
+import { FaServicestack } from 'react-icons/fa';
 import { NavLink, useParams } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

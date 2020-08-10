@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { FaDev, FaRegGem, FaMobileAlt } from 'react-icons/fa';
 import classes from './Services.module.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

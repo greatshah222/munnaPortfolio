@@ -5,9 +5,9 @@ import './Shared/FontAwesomeIcon/FontAwesome';
 
 import MainPage from './Hero/MainPage';
 import { Switch, Route } from 'react-router-dom';
-import About from './About/About';
+// import About from './About/About';
 import Contactme from './Contactme/Contactme';
-import Project from './Projects/Project';
+// import Project from './Projects/Project';
 import Footer from './Footer/Footer';
 import Navigations from './Shared/Navigation/Navigations/Navigations';
 
